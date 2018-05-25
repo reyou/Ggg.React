@@ -40,3 +40,5 @@ node debugger, or php and go for the PHP and Go extensions.
 request - the request type of this launch configuration. Currently supported
 are launch and attach.
 //=============================================================================
+https://reactjs.org/docs/optimizing-performance.html#use-the-production-build
+//=============================================================================
