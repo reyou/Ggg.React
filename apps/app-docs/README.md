@@ -42,3 +42,6 @@ are launch and attach.
 //=============================================================================
 https://reactjs.org/docs/optimizing-performance.html#use-the-production-build
 //=============================================================================
+https://facebook.github.io/jest/docs/en/tutorial-react.html
+yarn add --dev react-test-renderer
+//=============================================================================
