@@ -16,3 +16,6 @@ When a snapshot test fails, you need to inspect whether it is an intended
 or unintended change. If the change is expected you can invoke Jest with
 jest -u to overwrite the existing snapshot.
 //=============================================================================
+yarn add --dev enzyme
+yarn add jest-enzyme --dev
+//=============================================================================
