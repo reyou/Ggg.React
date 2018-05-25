@@ -8,6 +8,7 @@
     "external-editor": "^2.1.0",
     "fast-deep-equal": "^1.0.0",
     "husky": "^0.14.3",
+    "jest-resolve-dependencies": "^23.0.0",
     "jquery": "^3.2.1",
     "js-base64": "^2.3.2",
     "json-schema-traverse": "^0.3.1",
@@ -23,7 +24,7 @@
     "uuid": "^3.1.0"
   },
   "scripts": {
-    "start": "st",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
