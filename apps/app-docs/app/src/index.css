@@ -12,5 +12,6 @@ body {
 }
 .components {
   border: 1px solid #ccc;
+  padding: 10px;
   margin: 20px;
 }

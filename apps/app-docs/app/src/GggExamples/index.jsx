@@ -1,9 +1,21 @@
 // https://reactjs.org/docs/faq-ajax.html
 // https://www.npmjs.com/package/request-promise
 import React, { Component } from "react";
-import FormatName from "./FormatName";
-import GetGreeting from "./GetGreeting";
-import MyButton from "./MyButton";
+import FormatName from "./Examples/FormatName";
+import GetGreeting from "./Examples/GetGreeting";
+import MyButton from "./Examples/MyButton";
+import ConvertString from "./Examples/ConvertString";
+import Conditional from "./Examples/Conditional";
+import DontRender from "./Examples/DontRender";
+import FunctionsAsChildren from "./Examples/FunctionsAsChildren";
+import HtmlList from "./Examples/HtmlList";
+import SpreadOperator from "./Examples/SpreadOperator";
+import SignUpDialog from "./Examples/SignUpDialog";
+import Split from "./Examples/Split";
+import Composition from "./Examples/Composition";
+import LiftingStateUp from "./Examples/LiftingStateUp";
+import MultipleInputs from "./Examples/MultipleInputs";
+import messages from "./ExampleEntities/Messages";
 class GggExamples extends Component {
   // https://reactjs.org/docs/react-component.html#componentdidmount
   /*componentDidMount() is invoked immediately after a component is 
@@ -34,6 +46,20 @@ class GggExamples extends Component {
     components.set("FormatName", <FormatName />);
     components.set("GetGreeting", <GetGreeting user={this.getUser()} />);
     components.set("MyButton", <MyButton color="blue" shadowSize={2} />);
+    components.set("ConvertString", <ConvertString myVariable="blue" />);
+    components.set(
+      "Conditional",
+      <Conditional showHeader={true} messages={messages()} />
+    );
+    components.set("DontRender", <DontRender />);
+    components.set("FunctionsAsChildren", <FunctionsAsChildren />);
+    components.set("HtmlList", <HtmlList />);
+    components.set("SpreadOperator", <SpreadOperator />);
+    components.set("SignUpDialog", <SignUpDialog />);
+    components.set("Split", <Split />);
+    components.set("Composition", <Composition />);
+    components.set("LiftingStateUp", <LiftingStateUp />);
+    components.set("MultipleInputs", <MultipleInputs />);
     return components;
   }
   getComponentsHtml(components) {
