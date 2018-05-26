@@ -15,6 +15,12 @@ import Split from "./Examples/Split";
 import Composition from "./Examples/Composition";
 import LiftingStateUp from "./Examples/LiftingStateUp";
 import MultipleInputs from "./Examples/MultipleInputs";
+import Select from "./Examples/Select";
+import TextArea from "./Examples/TextArea";
+import NameForm from "./Examples/NameForm";
+import EmbeddingExpressions from "./Examples/EmbeddingExpressions";
+import EmbeddingMap from "./Examples/EmbeddingMap";
+import Siblings from "./Examples/Siblings";
 import messages from "./ExampleEntities/Messages";
 class GggExamples extends Component {
   // https://reactjs.org/docs/react-component.html#componentdidmount
@@ -60,6 +66,15 @@ class GggExamples extends Component {
     components.set("Composition", <Composition />);
     components.set("LiftingStateUp", <LiftingStateUp />);
     components.set("MultipleInputs", <MultipleInputs />);
+    components.set("Select", <Select />);
+    components.set("TextArea", <TextArea />);
+    components.set("NameForm", <NameForm />);
+    components.set(
+      "EmbeddingExpressions",
+      <EmbeddingExpressions numbers={[1, 3, 5, 6, 8]} />
+    );
+    components.set("EmbeddingMap", <EmbeddingMap numbers={[1, 3, 5, 6, 8]} />);
+    components.set("Siblings", <Siblings />);
     return components;
   }
   getComponentsHtml(components) {
@@ -81,7 +96,9 @@ class GggExamples extends Component {
     return (
       <div className="examples">
         <h4>Click examples below</h4>
-        {this.getComponentsHtml(this.state.components)}
+        <div className="componentList">
+          {this.getComponentsHtml(this.state.components)}
+        </div>
         <div className="components">{this.state.componentToLoad}</div>
       </div>
     );
