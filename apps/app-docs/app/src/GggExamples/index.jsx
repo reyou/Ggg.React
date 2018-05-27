@@ -21,6 +21,12 @@ import NameForm from "./Examples/NameForm";
 import EmbeddingExpressions from "./Examples/EmbeddingExpressions";
 import EmbeddingMap from "./Examples/EmbeddingMap";
 import Siblings from "./Examples/Siblings";
+import CorrectKeyUsage from "./Examples/CorrectKeyUsage";
+import WarningBanner from "./Examples/WarningBanner";
+import ConditionalOperation from "./Examples/ConditionalOperation";
+import ElementVariables from "./Examples/ElementVariables";
+import ArrowFunction from "./Examples/ArrowFunction";
+import Toggle from "./Examples/Toggle";
 import messages from "./ExampleEntities/Messages";
 class GggExamples extends Component {
   // https://reactjs.org/docs/react-component.html#componentdidmount
@@ -75,6 +81,12 @@ class GggExamples extends Component {
     );
     components.set("EmbeddingMap", <EmbeddingMap numbers={[1, 3, 5, 6, 8]} />);
     components.set("Siblings", <Siblings />);
+    components.set("CorrectKeyUsage", <CorrectKeyUsage />);
+    components.set("WarningBanner", <WarningBanner />);
+    components.set("ConditionalOperation", <ConditionalOperation />);
+    components.set("ElementVariables", <ElementVariables />);
+    components.set("ArrowFunction", <ArrowFunction />);
+    components.set("Toggle", <Toggle />);
     return components;
   }
   getComponentsHtml(components) {
