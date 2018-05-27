@@ -45,3 +45,11 @@ https://reactjs.org/docs/optimizing-performance.html#use-the-production-build
 https://facebook.github.io/jest/docs/en/tutorial-react.html
 yarn add --dev react-test-renderer
 //=============================================================================
+React elements are immutable. Once you create an element, you can't change
+its children or attributes. An element is like a single frame in a
+movie: it represents the UI at a certain point in time.
+//=============================================================================
+Applications built with just React usually have a single root DOM node.
+If you are integrating React into an existing app, you may have as many
+isolated root DOM nodes as you like.
+//=============================================================================

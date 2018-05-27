@@ -27,7 +27,14 @@ import ConditionalOperation from "./Examples/ConditionalOperation";
 import ElementVariables from "./Examples/ElementVariables";
 import ArrowFunction from "./Examples/ArrowFunction";
 import Toggle from "./Examples/Toggle";
+import AjaxCall from "./Examples/AjaxCall";
+import SetState from "./Examples/SetState";
+import Clock from "./Examples/Clock";
+import PreventsInjectionAttacks from "./Examples/PreventsInjectionAttacks";
+import NestedComponent from "./Examples/NestedComponent";
+import FilterableProductTable from "./Examples/FilterableProductTable";
 import messages from "./ExampleEntities/Messages";
+import products from "./ExampleEntities/Products";
 class GggExamples extends Component {
   // https://reactjs.org/docs/react-component.html#componentdidmount
   /*componentDidMount() is invoked immediately after a component is 
@@ -87,6 +94,15 @@ class GggExamples extends Component {
     components.set("ElementVariables", <ElementVariables />);
     components.set("ArrowFunction", <ArrowFunction />);
     components.set("Toggle", <Toggle />);
+    components.set("AjaxCall", <AjaxCall />);
+    components.set("SetState (Prev)", <SetState increment={3} />);
+    components.set("Clock", <Clock />);
+    components.set("PreventsInjectionAttacks", <PreventsInjectionAttacks />);
+    components.set("NestedComponent", <NestedComponent />);
+    components.set(
+      "FilterableProductTable",
+      <FilterableProductTable products={products} />
+    );
     return components;
   }
   getComponentsHtml(components) {
@@ -107,7 +123,7 @@ class GggExamples extends Component {
   render() {
     return (
       <div className="examples">
-        <h4>Click examples below</h4>
+        <h4>GggExamples</h4>
         <div className="componentList">
           {this.getComponentsHtml(this.state.components)}
         </div>
