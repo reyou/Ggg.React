@@ -1,5 +1,6 @@
 import React from "react";
-import Link from "./Link.react";
+import Link from "./GettingStarted/Link.react";
+import CheckboxWithLabel from "./GettingStarted/CheckboxWithLabel";
 export default class UnitTesting extends React.Component {
   constructor() {
     super();
@@ -18,6 +19,13 @@ export default class UnitTesting extends React.Component {
           )
         });
         break;
+      case "CheckboxWithLabel":
+        this.setState({
+          componentToLoad: (
+            <CheckboxWithLabel labelOn={"label on"} labelOff={"label off"} />
+          )
+        });
+        break;
       default:
         return this.state.componentToLoad;
     }
@@ -33,6 +41,13 @@ export default class UnitTesting extends React.Component {
             }}
           >
             Link
+          </a>
+          <a
+            onClick={e => {
+              this.handleClick(e, "CheckboxWithLabel");
+            }}
+          >
+            CheckboxWithLabel
           </a>
         </div>
         <div>{this.state.componentToLoad}</div>
