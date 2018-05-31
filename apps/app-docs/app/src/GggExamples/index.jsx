@@ -33,6 +33,8 @@ import Clock from "./Examples/Clock";
 import PreventsInjectionAttacks from "./Examples/PreventsInjectionAttacks";
 import NestedComponent from "./Examples/NestedComponent";
 import FilterableProductTable from "./Examples/FilterableProductTable";
+import ReferenceDemo from "./Examples/ReferenceDemo";
+import Tabs from "./Examples/Tabs";
 import messages from "./ExampleEntities/Messages";
 import products from "./ExampleEntities/Products";
 class GggExamples extends Component {
@@ -103,6 +105,8 @@ class GggExamples extends Component {
       "FilterableProductTable",
       <FilterableProductTable products={products} />
     );
+    components.set("ReferenceDemo", <ReferenceDemo />);
+    components.set("Tabs", <Tabs />);
     return components;
   }
   getComponentsHtml(components) {
