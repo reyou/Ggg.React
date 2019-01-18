@@ -1,0 +1,14 @@
+{
+  "name": "intro1",
+  "version": "1.0.0",
+  "description": "* Title:\tGetting Started – React\r   * Url:\thttps://reactjs.org/docs/getting-started.html",
+  "main": "intro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
