@@ -1,2 +1,0 @@
-Testing Asynchronous Code
-https://facebook.github.io/jest/docs/en/asynchronous.html
